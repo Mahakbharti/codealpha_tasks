@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beautiful Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<h1>-Image Gallery-</h1>
+  <h3 class="gallery-title">💡 Explore the World Through Pictures ✨</h3>
+
+  <div class="gallery-container">
+    <button class="scroll-btn left" onclick="scrollGallery(-300)">&#10094;</button>
+
+    <div class="gallery" id="gallery">
+      <img src="https://picsum.photos/id/1015/600/400" alt="Image 1">
+      <img src="https://picsum.photos/id/1025/600/400" alt="Image 2">
+      <img src="https://picsum.photos/id/1035/600/400" alt="Image 3">
+      <img src="https://picsum.photos/id/1045/600/400" alt="Image 4">
+      <img src="https://picsum.photos/id/1055/600/400" alt="Image 5">
+      <img src="https://picsum.photos/id/1065/600/400" alt="Image 6">
+      <img src="https://picsum.photos/id/1075/600/400" alt="Image 7">
+    </div>
+
+    <button class="scroll-btn right" onclick="scrollGallery(300)">&#10095;</button>
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <span id="closeBtn">&times;</span>
+    <img id="lightboxImage" src="" alt="Zoomed" />
+    <button id="prevBtn">&#10094;</button>
+    <button id="nextBtn">&#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
